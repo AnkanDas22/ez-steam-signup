@@ -1,7 +1,7 @@
 from selenium import webdriver
 from string import ascii_lowercase,ascii_uppercase,digits
 from random import choice
-driver=webdriver.Chrome("F:\\Python Tools\\chromedriver_win32\\chromedriver.exe")
+driver=webdriver.Chrome("C:\\chromedriver.exe")
 k='True'
 print("================Created by Ankan Das from UEM, Kolkata out of no reason================\n================Just use it at your own will but credit my GitHub profile please=======\n")
 while(k=='True'):
