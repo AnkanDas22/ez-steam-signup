@@ -16,8 +16,8 @@ while(k=='True'):
     b=''.join(choice(ascii_lowercase+digits+ascii_uppercase) for i in range(12))
     driver.find_element_by_name("password").send_keys(b)
     driver.find_element_by_name("reenter_password").send_keys(b)
-    x=input("Input 1 if you want to enter the email address or press anything else if you want it to be automated\n")
-    if(x=="1"):
+    x=input("Input 1 or Yes or Y->OWN EMAIL ADDRESS\nANYTHING ELSE-Automated Email Address\n")
+    if(x=="1" or x.upper()=='YES' or x.upper()=='Y'):
         c=input("Enter the email address that you want to register with: \n")
     else:
         y=input("Enter Y or Yes or 1-> Input the domain name, ANYTHING ELSE for @gmail.com as your preferred\n")
