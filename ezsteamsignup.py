@@ -20,7 +20,7 @@ while(k=='True'):
     if(x=="1" or x.upper()=='YES' or x.upper()=='Y'):
         c=input("Enter the email address that you want to register with: \n")
     else:
-        y=input("Enter Y or Yes or 1-> Input the domain name, ANYTHING ELSE for @gmail.com as your preferred\n")
+        y=input("Enter Y or Yes or 1-> Input the domain name\nANYTHING ELSE for @gmail.com as your preferred\n")
         if(y.upper()=='Y' or y.upper()=='YES' or y=='1'):
             x=input("Enter your preferred email domain?\nDOMAIN NAME EXAMPLE:@gmail.com or @yahoo.com\n")
             c=''.join(choice(ascii_lowercase+digits+ascii_uppercase) for i in range(15))+x
