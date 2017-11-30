@@ -7,7 +7,7 @@ print("================Created by Ankan Das from UEM, Kolkata out of no reason==
 while(k=='True'):
     driver.set_page_load_timeout(40)
     driver.get("https://store.steampowered.com/join/?")
-    h=input("Do you want to enter your own username or get a randomized one?\nPress 1 or Yes or Y for YES, ANYTHING ELSE means NO\n");
+    h=input("Do you want to enter your own username or get a randomized one?\nPress 1 or Yes or Y->OWN USERNAME, ANYTHING ELSE->RANDOMIZED USERNAME\n");
     if(h=='1' or h.upper()=='YES' or h.upper()=='Y'):
         a=input("Enter your username\n")
     else:
@@ -20,7 +20,7 @@ while(k=='True'):
     if(x=="1"):
         c=input("Enter the email address that you want to register with: \n")
     else:
-        y=input("Enter Y or Yes or 1 if you want to enter domain, ANYTHING ELSE for @gmail.com as your preferred\n")
+        y=input("Enter Y or Yes or 1-> Input the domain name, ANYTHING ELSE for @gmail.com as your preferred\n")
         if(y.upper()=='Y' or y.upper()=='YES' or y=='1'):
             x=input("Enter your preferred email domain?\nDOMAIN NAME EXAMPLE:@gmail.com or @yahoo.com\n")
             c=''.join(choice(ascii_lowercase+digits+ascii_uppercase) for i in range(15))+x
@@ -30,7 +30,7 @@ while(k=='True'):
     driver.find_element_by_name("email").send_keys(c)
     driver.find_element_by_name("reenter_email").send_keys(c)
     while True:
-        e=input("Hey wanna change the CAPTCHA?\n Enter 1 or Yes or Y if YES, anything else would signal a NO\n")
+        e=input("Hey wanna change the CAPTCHA?\n Enter 1 or Yes or Y->YES, ANYTHING ELSE->NO\n")
         if e=="1":
             driver.find_element_by_id("captchaRefreshLink").click()
         driver.find_element_by_name("captcha_text").clear()
