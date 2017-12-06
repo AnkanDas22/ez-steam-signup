@@ -45,7 +45,7 @@ while(k=='True'):
     print("USERNAME: %s\n"%a)
     print("PASSWORD: %s\n"%b)
     print("EMAIL ID: %s\n"%c)
-    with open("C:/Users/Ankan/Documents/steamaccountlist.txt","a+") as fp:
+    with open("C:/steamaccountlist.txt","a+") as fp:
         fp.write("USERNAME: %s\r\n"%a)
         fp.write("PASSWORD: %s\r\n"%b)
         fp.write("EMAIL ID: %s\r\n"%c)
